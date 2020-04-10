@@ -1,0 +1,21 @@
+info:
+  contact: {}
+  license: {}
+paths:
+  /api/v1/tags:
+    post:
+      parameters:
+      - description: Name
+        in: query
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":200,"data":{},"msg":"ok"}'
+          schema:
+            type: string
+      summary: 首页
+swagger: "2.0"
